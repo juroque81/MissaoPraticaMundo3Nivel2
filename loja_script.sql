@@ -35,6 +35,13 @@ CREATE TABLE Compra (
   FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
 );
 
+CREATE TABLE Produto (
+  id_produto INT NOT NULL PRIMARY KEY,
+  nome VARCHAR(100) NOT NULL,
+  quantidade INT,
+  preco_venda DECIMAL(10, 2)
+);
+
 CREATE TABLE Venda (
   id_venda INT NOT NULL PRIMARY KEY,
   id_usuario INT NOT NULL,         -- vendedor
@@ -47,10 +54,5 @@ CREATE TABLE Venda (
   FOREIGN KEY (id_produto) REFERENCES Produto(id_produto)
 );
 
-CREATE TABLE Produto (
-  id_produto INT NOT NULL PRIMARY KEY,
-  nome VARCHAR(100) NOT NULL,
-  quantidade INT,
-  preco_venda DECIMAL(10, 2)
-);
+
 
