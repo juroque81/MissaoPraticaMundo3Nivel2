@@ -13,7 +13,7 @@ INSERT INTO Usuario (id_usuario, Pessoa_id_pessoa, login, nome, senha)
 VALUES
 (1, 1, 'maria', 'Maria Silva', '1234'),
 (2, 2, 'joao', 'João Souza', '1234'),
-(4, 7, 'carolina', 'Ana Carolina', '1234'),
+(4, 4, 'carolina', 'Ana Carolina', '1234'),
 (3, 3, 'ana', 'Ana Lima', '1234');
 
 -- Inserir produtos
